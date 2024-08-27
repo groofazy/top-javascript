@@ -1,7 +1,6 @@
-const button = document.querySelector("button");
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
 
-function greet() {
-    const name = prompt("What is your name?");
-    const greeting = document.querySelector("#greeting");
-    greeting.textContent = 'Hello ${name}, so nice to see you!'
-}
+textBox.addEventListener("keydown", (event) => {
+    output.textContent = 'You pressed "${event.key}".'
+})
