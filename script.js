@@ -1,6 +1,7 @@
-const textBox = document.querySelector("#textBox");
-const output = document.querySelector("#output");
+const container = document.querySelector("#container");
 
-textBox.addEventListener("keydown", (event) => {
-    output.textContent = 'You pressed "${event.key}".'
-})
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is text-content!";
+
+container.appendChild(content)
