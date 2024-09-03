@@ -16,7 +16,12 @@ button.addEventListener("click", () => {
     listText.textContent = myItem;
     listBtn.textContent = 'Delete';
 
-    list.appendChild(listItem);
+    list.appendChild(listItem); 
 
+    // function that deletes entire list item
+    listBtn.addEventListener("click", () => {
+        listItem.remove(); 
+    });
 
+    input.focus();
 });
